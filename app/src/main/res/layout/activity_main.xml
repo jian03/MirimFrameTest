@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_rj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="황인준" />
+        <Button
+            android:id="@+id/btn_jm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나재민" />
+        <Button
+            android:id="@+id/btn_dh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이동혁" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/linear_rj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff00"
+            >
+>           <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rj"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_jm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E91E63"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/jm"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_dh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03A9F4"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dh"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
